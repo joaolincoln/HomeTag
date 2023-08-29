@@ -5,7 +5,12 @@
 
 ![Apresentação](img/Apresentacao/imgApresentacao01.jpeg)
 ![Apresentação](img/Apresentacao/imgApresentacao02.jpeg)
-
+![Apresentação](img/Apresentacao/imgApresentacao03.jpeg)
+![Apresentação](img/Apresentacao/imgApresentacao04.jpeg)
+![Apresentação](img/Apresentacao/imgApresentacao05.jpeg)
+![Apresentação](img/Apresentacao/imgApresentacao06.jpeg)
+![Apresentação](img/Apresentacao/imgApresentacao07.jpeg)
+![Apresentação](img/Apresentacao/imgApresentacao08.jpeg)
 
 ### Assistir ao vídeo de introdução
 
