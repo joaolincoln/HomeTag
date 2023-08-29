@@ -1,0 +1,16 @@
+// SweetAlert2
+// github.com/sweetalert2/sweetalert2
+
+@import 'scss/theming';
+@import 'scss/animations';
+
+@font-face {
+    font-family: 'font principal';
+    src: url(DINNextRoundedLTPro-Bold.otf) format('opentype');
+}
+
+
+body {
+  @include sweetalert2-body();
+  @include sweetalert2-toasts-body();
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Cliente</title>
+    <link rel="stylesheet" href="CRUD Cliente.css">
+</head>
+<body onload="MostraUserLogado(), validaUsuario(), crudCliente()">
+    <div id ="container">
+        
+        <div id="top">
+            <!-- botão -->  
+            <a id= "home" href="CRUD Dispositivo.html"></a>
+            <div id="nomeUsuario"></div>
+        </div>
+
+        <div id="middleleft">
+            
+            <div id="cantoEsquerdo">
+
+                <div id="menuMenu">
+
+                    <h4 id="textoMenu">Menu</h4>
+                     
+
+                </div>
+                <hr id="linha"> 
+
+                <div id="botaoInicio">
+                    <button class="botoes" onclick="VoltarInicio()">Início</button>
+                    <button class="botoes" onclick="VoltarUsuario()">Usuário</button>
+
+                </div>
+
+                <div id="botaoSair">
+                    <hr id="linha2"> 
+                   <button class="botoes" onclick="logOut()">Sair</button>
+                </div>
+
+            </div>
+
+        
+            <div id="middleright">
+                <!-- Dados Usuario -->
+                <div id="separador">
+                    <!-- Para separar as Janelas Usuario e Contato -->
+                </div>
+                <!-- Dados Contato -->
+                <div id="divusuario">
+                    <div id="backgroundUsuario">
+                    
+                        <div id="DadosUsuarioesquerda">
+
+                            <br> <!-- Não apagar o <br> está organizando a DIV -->
+                            <label id="nome">Nome:</label>
+                            <label id="generoEsquerda">Telefone:</label>
+                            <label id="dtnasc">Data Nascimento:</label>
+
+                        </div>
+                        <div id="DadosUsuariodireita">
+                            <label class="texto">Informações do Usuário</label>
+                            <br> <!-- Não apagar o <br> está organizando a DIV -->
+                            <input id="mostraNome" class="inputs" type='text' class='input' required>
+                            <input id="mostraTelefone" class="inputs" type='text'  required>
+                            <input id="mostraNascimento" class="inputDN" type='date' id='dtnasc'>
+                            <br> <!-- Não apagar o <br> está organizando a DIV -->
+                         
+
+                        </div>
+                    </div>
+                </div>
+                <div id="separador">
+                    <!-- Para separar as Janelas Usuario e Contato -->
+                </div>
+                <!-- Dados Contato -->
+                
+                <div id="divcontato">
+                    <div id="backgroundContato">
+                        <div id="DadosContatoesquerda">
+                            
+                            <label id="email">E-mail/Login:</label>
+                            <label id="alterarSenhaEsquerda">Alterar senha:</label>
+                            <label id="senha">Confirmar senha:</label>
+
+                        </div>
+                        <div id="DadosContatodireita">
+                            <label class="texto">Informações de Conta</label>
+                            <br> <!-- Não apagar o <br> está organizando a DIV -->
+                            <input id="mostraEmail" class="inputs" type='email' id='email' name='email' required>
+                            <input id="altSenha" class="inputs" type='password' name='senha' required>
+                            <input id="confSenha" class="inputs" type='password' name='senha' required>
+                            
+                                <div id="BotaoContato">
+                                    <button id="botaoSalvar" onclick="editarUsuario()">Salvar</button>
+                                    <button id="botaoSalvar" onclick="deletarConta()">Deletar Conta</button>
+                                </div>
+                        </div>
+                    </div>   
+                </div>
+                <div id="Salvar">
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+        
+    </div>
+<script src="SA.js"></script>
+<script src="SweetAlert2\dist\sweetalert2.all.min.js"></script> 
+</body>
+</html>

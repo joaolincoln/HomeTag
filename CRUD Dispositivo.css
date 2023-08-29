@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'font principal';
+    src: url(DINNextRoundedLTPro-Bold.otf) format('opentype');
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0 ;
+    height:100%;
+}
+
+#container{
+    background-color: #9ee5f7;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* -------   TOP ------- */
+#top{
+    background-color: #09093f;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nomeUsuario{
+    font-family: 'font principal';
+    font-size: 20px;
+    color: #ffffff;
+    margin: 2%;
+    font-weight: 500;
+}
+
+#home{
+    background-image:url(azul\ clara\ -\ fundo\ transp.png) ; 
+    background-repeat: no-repeat;
+    background-size:140px ;
+    height: 60%;
+    width: 30%;
+    margin-left: 1%;
+    align-items: center;
+}
+    
+/* -------   BARRA MENU ESQUERDO ------- */
+#middleleft{
+    /* background-color: #ffffff; */
+    height: 93vh;
+    width: 100%;
+    margin: 0;
+    display: flex;  
+}
+
+#cantoEsquerdo{
+    background-color: #ffffff;
+    height:100%;
+    width: 10%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* -------  INPUTS ------- */
+.inputs{
+    padding: 5px;
+    margin: 0.6rem 0.1;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #8636ff;
+    
+    font-size: 15px;
+    font-family: 'font principal';
+    font-weight: 100;
+    padding-bottom: 5px;
+} 
+
+
+.inputDN{   
+    /* margin: 0.6rem 0.1rem;
+    padding: 0.8rem 2.2rem; */
+    margin: 1% 1%;
+    padding: 2% 1%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #8636ff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'font principal';
+    font-weight: 100;
+    color:#09093f;
+} 
+
+/* CONTORNO DO INPUT */
+.inputs:focus-visible {
+    outline: 1px solid #8636ff;
+}
+
+
+/* -------   BUTTONS ------- */
+#botaoInicio{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;  
+}
+
+#botaoSair{
+    width: 100%;
+    height: 22%;
+    margin: 0%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+#menuMenu{
+    width: 100%;
+    height: 8.8%;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    color:#13135c
+} 
+
+/* filhos do menuMenu */
+     #linha{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 0.3%;
+        background-color: #09093f;  
+
+    } 
+    
+    #linha2{
+
+        padding: 0%;
+        margin: 0;
+        width: 100%;
+        height: 0.3%;
+        background-color: #09093f; 
+    }
+
+    /* h4 texto da palavra menu */
+    #textoMenu{
+        padding-bottom: 10%;
+        height: 3%;
+        text-align: center;
+        justify-content: center;
+        font-family: 'font principal';
+        font-size: 15px;
+        color: #13135c;
+    }
+
+    .botoes {
+        background-color: #ffffff;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        font-family: 'font principal';
+        font-size: 15px;
+        color: #13135c;  
+    }
+    
+    .botoes:hover {
+        background-color:#8636ff ;
+        color: #ffffff;
+        cursor: pointer;
+    } 
+
+
+
+#Direita{
+    margin: 0;
+    width: 90%;
+    height: 93vh;
+    background-color:#9ee5f7;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} 
+
+#frase1{
+    width: 100%;
+    height: 5%;
+    background-color: #9ee5f7;
+    align-items: center;
+    font-family: 'font principal';
+    color: #09093f;
+    font-size: 130%;
+    margin-top: 8px;
+ }
+ 
+ /*#frase2{
+ 
+     width: 100%;
+     height: 4%;
+     background-color: #9ee5f7;
+     align-items: center;
+     font-family: 'font principal';
+     color: #09093f;
+ 
+  }*/
+
+  #SelectCadastrar{
+    width: 60%;
+    height: 18%;
+    background-color:#9ee5f7;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );     
+}
+
+#fraseCadastrar{ 
+    height: 15%;
+    width: 100%;
+    font-family: 'font principal';
+    color: #09093f;
+    font-size: large;
+    text-align: center;
+    margin: 10px;
+    
+        
+}
+
+#alterarDiv{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+ 
+
+ #fraseAlterar{
+    
+    height: 17%;
+    width: 100%;
+    font-family: 'font principal';
+    color: #09093f;
+    font-size: large;   
+}
+
+#objetoAtual{
+    
+    height: 13%;
+    width: 100%;
+    font-family: 'font principal';
+    color: #09093f;
+    font-size: large;
+    margin-top: 9px;
+    padding: 5px;
+        
+}
+
+
+#SelectAlterar{
+    width: 59.5%;
+    height: 26%;
+    background-color: #9ee5f7;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    align-items: center;
+    padding: 7px;
+    margin-top: 1%;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+}
+
+
+#Deletar{
+    width:60%;
+    height: 17%;
+    background-color:#9ee5f7;
+    margin-top: 1% ;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+#objSelect{
+    height: 40%;
+    margin-top: 1%;
+}
+
+
+.select{
+    margin: 0.6rem 0.1;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #8636ff; 
+    
+    font-size: 15px;
+    font-family: 'font principal';
+} 
+
+/* ----------- DIV LISTAR ---------- */
+
+#listarDispositivos{
+    /* background-color:#9ee5f7; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 15%;
+    width: 60%;
+    /* background-color:#ffffff; */
+    color: #09093f;
+    font-size: 20px;
+    flex-direction: column;
+    margin-top: 1%;
+    border-radius: 5px;
+    align-items: center;
+}
+
+#TituloListar{
+    /* background-color: #8636ff; */
+    height: 5%;
+    width: 96%;
+    font-family: 'font principal';
+    font-size: 18px;
+    margin-left: 3%;
+    color:#09093f;
+    
+}
+
+#Bar{
+
+    height: 20%;
+    width: 70%;
+    align-items: center;
+    background-color:#09093f;
+    font-size: 16px;
+    display: inline-flex;
+    justify-content:space-around;
+    margin-top: 2%;
+    font-family: 'font principal';
+    color:#ffffff;
+    border-radius: 5px;
+    
+}
+
+#Lista{
+    /* background-color: aqua; */
+    height: 40%;
+    width: 70%;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 16%;
+    font-family: 'font principal';
+    overflow-y:scroll;
+    
+}
+
+/* ----------- LABELS ---------- */
+.label{
+    font-family: 'font principal';
+    font-size: 18px;
+    color:#09093f;
+    padding: 5px;  
+}
+
+.labels{
+    display: flex;
+    font-size: 15px;
+    font-family: 'font principal';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ----------- BOTOES ---------- */
+#botaoSalvar{
+    width: 100%;
+    margin-top: 2%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.botao{
+    width: 80px;
+    border: none;
+    background-color: #8636ff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'font principal';
+    font-size: 90%;
+    color: #ffffff; 
+}
+
+
+.botao:hover{
+
+    background-color: #13135c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#botaoInicio{
+
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;  
+}
+
+#botaoSair{
+
+    width: 100%;
+    height: 22%;
+    margin: 0%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+#botaoDeletar{
+
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ----------- DIVS LISTAR ---------- */
+
+.Divs{
+    width:20%;
+    color: #13135c;
+    font-size: 15px;
+    justify-content: space-evenly;
+    display: inline-flex;
+}
+
+.ObjetosCad{
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    justify-content:space-evenly;
+}

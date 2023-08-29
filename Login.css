@@ -1,0 +1,160 @@
+@font-face {
+
+    font-family: 'font principal';
+    src: url(DINNextRoundedLTPro-Bold.otf) format('opentype');
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0% ;
+    height:100%;
+    background-color: #13135c;
+
+}
+
+
+#imagem{
+    width: 75%;
+    height:70%;   
+    padding: 5px;
+    display: flex;
+    align-items: initial;
+    justify-content: baseline;
+}
+
+.botao{
+    font-family: 'font principal';
+    padding: 10px;
+    margin: 4%;
+    font-weight: 500;
+    color:#8636ff;
+}
+
+.inputs{ 
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.inputs input { 
+    padding: 0.8rem 7rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #8636ff;
+}
+
+.inputs input:hover {
+    background-color: #ffffff;
+}
+
+.inputs input:focus-visible {
+    outline: 1px solid #8636ff;
+}
+
+
+
+botao:hover{
+    background-color: #8636ff;
+    cursor: pointer;
+}
+
+#botaoo{
+    
+    font-family: 'font principal';
+    align-items: center;
+    font-size: 25;
+    font-weight: 600;
+    color:#13135c;
+}
+
+.botao{
+    font-family: 'font principal';
+    padding: 3px;
+    margin: 3%;
+    font-weight: 500;
+    color:#13135c;
+}
+
+.butao{
+    font-family: 'font principal';
+    padding: 4px;
+    margin: 0.5%;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#direita-topo{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: end; 
+    
+    
+}
+
+
+.card-login{
+   
+    background-color:  #9ee5f7;/* transparencia*/
+    position:absolute;/*para a div ocupar apenas os espaços de seus elementos*/
+    padding: 30px;
+    border-radius: 10%;
+    font-size:large;
+    color:#13135c;
+    text-align:center;
+    border: none;
+    font-family: 'font principal';
+    justify-content: center;   
+    top: 55%;
+    left: 53%;
+    transform: translate(-60%, -60%);
+}
+
+.botaoLogin{
+    background-color: #8636ff;
+    border: none;
+    border-radius: 5%;
+    padding:7px;
+    width: 36%;
+    color: aliceblue;
+    font-family:'font principal';
+    font-size:large;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/*button{
+    background-color: #8636ff;
+    border: none;
+    border-radius: 5%;
+    padding:7px;
+    width: 36%;
+    color: aliceblue;
+    font-family:'font principal';
+    font-size:large;
+    justify-content: center;
+    border-radius: 5px;
+}*/
+
+
+button:hover{
+    background-color: #13135c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 5%;
+    font-size: 15px;
+    border-radius: 5%;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px;
+}

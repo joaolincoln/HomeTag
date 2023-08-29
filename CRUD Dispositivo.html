@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Dispositivo</title>
+    <link rel="stylesheet" href="CRUD Dispositivo.css">
+</head>
+<body onload="MostraUserLogado(), ListarDispositivos()">
+    <div id ="container">
+        
+        <div id="top">
+            <!-- botão -->  
+            <a id= "home" href="CRUD Dispositivo.html"></a>
+            <div id="nomeUsuario"></div>
+        </div>
+
+        <div id="middleleft">
+            
+            <div id="cantoEsquerdo">
+
+                <div id="menuMenu">
+
+                    <h4 id="textoMenu">Menu</h4>
+                     <hr id="linha"> 
+
+                </div>
+
+                <div id="botaoInicio">
+                    <button class="botoes" onclick="VoltarInicio()">Início</button>
+                    <button class="botoes" onclick="VoltarUsuario()">Usuário</button>
+
+                </div>
+
+                <div id="botaoSair">
+                    <hr id="linha2"> 
+                   <button class="botoes" onclick="logOut()">Sair</button>
+                </div>
+
+            </div>
+            
+            <div id="Direita">
+
+                <div id="frase1">
+
+                       Gerenciamento do Dispositivo
+                   
+                </div>        
+
+            <div id="SelectCadastrar">
+
+                     <div id="fraseCadastrar">
+
+                        <label id="fraseCadastrar" >Qual objeto deseja cadastrar?</label>
+
+                    </div>      
+
+                        <select class="select" id="Objetos">
+                            <option hidden>Objetos</option>
+                            <option></option>
+                            <option>Bolsa</option>
+                            <option>Carteira</option>
+                            <option>Celular</option>
+                            <option>Chave do carro</option>
+                            <option>Chave da casa</option>
+                            <option>Controle remoto</option>
+                            <option>Outro</option>
+                        </select>
+
+                        <label class="label">Tag: </label>
+                        <input class="inputs" id="Tag" placeholder="N° da Tag">
+
+
+                            <label class="label">Luz</label>                          
+                            <input class="inputs" id="Luz" type="checkbox">
+
+                            <label class="label">Som</label>
+                            <input class="inputs" id="Som" type="checkbox">
+
+                            <div id="botaoSalvar">
+
+                                <button class="botao" onclick="Dispositivo()">Salvar</button>
+
+                            </div>
+                    </div>  
+                    
+                        <div id="listarDispositivos">
+                            <div id="TituloListar">
+                                <label id="objetoListados">Objetos cadastrados:</label>
+                            </div>
+                                <div id="Bar">
+                                    <label>Objeto</label>
+                                    <label>Tag</label>
+                                    <label>Luz</label>
+                                    <label>Som</label>
+                                    <label>Sinal</label>
+                                </div>
+                                <div id="Lista">
+                                   
+                                </div>
+                        </div>
+
+                <div id="SelectAlterar">
+
+
+                <div id="fraseAlterar">
+                    
+                    <label id="fraseAlterar" >Qual objeto deseja alterar?</label>
+
+                </div>      
+
+                    <select class="select" id="ObjetosAlterar">
+                        <option hidden>Objetos</option>
+                        <option></option>
+                        <option>Bolsa</option>
+                        <option>Carteira</option>
+                        <option>Celular</option>
+                        <option>Chave do carro</option>
+                        <option>Chave da casa</option>
+                        <option>Controle remoto</option>
+                        <option>Outro</option>
+                    </select>
+
+
+                    <div id="objetoAtual">
+
+                       <label class="label">Escolha o objeto atual:</label>
+
+                </div>      
+
+                    <select class="select" id="NovoObjAlterado">
+                        <option hidden>Objetos</option>
+                        <option></option>
+                        <option>Bolsa</option>
+                        <option>Carteira</option>
+                        <option>Celular</option>
+                        <option>Chave do carro</option>
+                        <option>Chave da casa</option>
+                        <option>Controle remoto</option>
+                        <option>Outro</option>
+                    </select>
+
+
+                <label class="label">Tag: </label>
+                <input class="inputs" id="TagAlterar" placeholder="N° da Tag">
+
+                <!-- <div id="luzEsom2">  -->
+
+                    <label class="label">Luz</label>                          
+                    <input class="inputs" id="LuzAlterar" type="checkbox">
+
+                    <label class="label">Som</label>
+                    <input class="inputs" id="SomAlterar" type="checkbox">
+
+                <!-- </div>  -->
+                
+                <div id="alterarDiv">
+
+                    <button class="botao" onclick="Alterar()">Alterar</button>
+
+                </div>    
+                </div>        
+            
+                <div id="Deletar">
+
+                <label class="label">Selecione o objeto que deseja deletar:</label>
+
+              <div id="objSelect">
+
+                <select class="select" id="ObjetosDeletar">
+                    <option hidden>Objetos</option>
+                    <option></option>
+                    <option>Bolsa</option>
+                    <option>Carteira</option>
+                    <option>Celular</option>
+                    <option>Chave do carro</option>
+                    <option>Chave da casa</option>
+                    <option>Controle remoto</option>
+                    <option>Outro</option>
+                </select>
+
+                </div>    
+                
+           <div id="botaoDeletar">
+
+                  <button class="botao" onclick="Deletar()">Deletar</button>
+
+                </div>  
+            </div>    
+        </div>
+    </div>    
+<script src="SA.js"></script>
+<script src="SweetAlert2\dist\sweetalert2.all.min.js"></script>  
+</body>
+</html>
+        

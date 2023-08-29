@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Cadastro.css">
+</head>
+<body>
+    <div id ="container">
+        <div id="esquerda">
+            <img id= "imagem" src="img/Hometag - logo cor fundo transp margem.png">
+        </div>
+
+        <div id="direita">
+            <div id="direita-topo">
+
+                <a class="botao"  href="Login.html">Login</a>
+                <a class="botao"  href="Home.html">Home</a>
+
+            </div>
+
+
+            <div id="direita-meio">
+                <div class="inputs">
+
+                    <label id="botao" for="name">Nome completo</label>
+                    <input id="NomeCompleto" type="text" name="name" placeholder="Digite seu nome completo" required style="text-align: center">
+                    <label id="frase" for="name">O nome deve conter mais de 4 caracteres</label>
+                                
+                </div>
+
+                <div class="inputs">
+                        
+                    <label id="botao" for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Ex: usuario@dominio.com" required style="text-align: center">
+                    <label id="frase" for="name"></label>
+                            
+                </div>
+
+                <div class="inputs">
+
+                    <label id="botao" for="password">Senha</label>
+                    <input id="Senha" type="password" name="password" placeholder="Digite sua senha" required style="text-align: center">
+                    <label id="frase" for="name">A senha deve conter 8 ou mais caracteres</label>
+                              
+                </div>
+
+                <div class="inputs">
+                        
+                    <label id="botao" for="password">Confirmar senha</label>
+                    <input id="ConfSenha" type="password" name="password" placeholder="Confirme sua senha" required style="text-align: center">
+                        
+                </div>
+                    
+                <div id="direita-baixo">
+
+                    <button onclick="Cadastrar()" class="BotaoCadastrar">Cadastrar</button>
+    
+                </div>
+
+            </div>            
+
+        </div>
+  
+    </div>
+<script src="SA.js"></script>
+<script src="SweetAlert2\dist\sweetalert2.all.min.js"></script>
+</body>
+</html>

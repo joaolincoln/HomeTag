@@ -1,0 +1,37 @@
+#include <ESP8266HTTPClient.h>
+#include <WiFiClient.h>
+
+
+String end_placa_1 = "http://192.168.45.11"; //endereço da placa 1
+String end_placa_2 = "http://192.168.45.12"; //endereço da placa 2
+
+
+void envia_comando_esp01(String ip_placa, bool status_som, bool status_led)
+{
+  if(WiFi.status()== WL_CONNECTED){ 
+    WiFiClient client;
+    HTTPClient http;
+
+    // 0 + 0 = 0 - SOM OFF e LED OFF
+    // 0 + 1 = 1 - SOM OFF e LED ON
+    // 2 + 0 = 2 - SOM ON  e LED OFF
+    // 2 + 1 = 3 - SOM ON  e LED ON
+    int comando = int(status_som)*2 + int(status_led); 
+
+    String serverPath = end_placa + "?comando=" + String(comando);
+    http.begin(client, serverPath.c_str()); //inicia a comunicação
+    int httpResponseCode = http.GET(); //envia a requisição HTTP GET
+
+    //verifica erros
+    if (httpResponseCode>0) {
+      Serial.print("HTTP Response code: ");
+      Serial.println(httpResponseCode);
+      String payload = http.getString();
+      Serial.println(payload);
+    }else {
+      Serial.print("Error code: ");
+      Serial.println(httpResponseCode);
+    }
+
+    http.end(); // finaliza conexão com a placa
+}
