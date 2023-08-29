@@ -10,11 +10,27 @@
 ![Apresentação](img/Apresentacao/imgApresentacao05.jpeg)
 ![Apresentação](img/Apresentacao/imgApresentacao06.jpeg)
 ![Apresentação](img/Apresentacao/imgApresentacao07.jpeg)
-![Apresentação](img/Apresentacao/imgApresentacao08.jpeg)
+![Apresentação](img/Apresentacao/imgApresentacao018.jpeg)
 
-### Assistir ao vídeo de introdução
+<br/>
+<br/>
 
-7 [[Curso primeiros passos com a Linguagem C1(http://img.youtube.com/vi/Cogy1ca8qw/0.jpg)](http://www.youtube.com/watch?v=C0gy1ca8qYw "Video de introdução ao curso")
+<div align="center">
 
-![Documentação Técnica](img/DocumentoTécnico_HomeTag/DocumentoTécnico_HomeTag.pdf)
+### Assistir ao vídeo de apresentação:
+[![Alt text](https://img.youtube.com/vi/lxKLln-CW1s/0.jpg)](https://www.youtube.com/watch?v=lxKLln-CW1s)
+ 
+</div>
+
+<br/>
+<br/>
+
+### Tenha acesso a documentação técnica Hometag: >  ![  aqui](img/DocumentoTécnico_HomeTag/DocumentoTécnico_HomeTag.pdf)
+
+
+
+
+
+
+
 
